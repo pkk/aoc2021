@@ -1,5 +1,5 @@
 def sol(a_list):
-    return sum( 1 if a_list[x] > a_list[x-1] else 0 for x in range(1,len(a_list)))
+    return sum(a_list[x] > a_list[x-1] for x in range(1,len(a_list)))
 
 def day1_a(lines):
     return sol(lines)
