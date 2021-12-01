@@ -2,7 +2,7 @@ def day1_a(a_list):
     return sum(a_list[x] > a_list[x-1] for x in range(1,len(a_list)))
 
 def day1_b(a):
-    return day1_a([a[x-2] + a[x-1] + a[x] for x in range(2,len(a))])
+    return day1_a([sum(a[x-2:x+1]) for x in range(2,len(a))])
 
 def read_file():
     with open("day1.txt") as f:
