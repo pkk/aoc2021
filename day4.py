@@ -1,26 +1,3 @@
-# with open("day4.txt") as f:
-#    nums = map(int, f.readline().strip().split(","))
-#
-#    boards = []
-#    board = []
-#    for row in f:
-#        if board
-
-# with open("day4.txt") as file:
-#    bingo_numbers = list(map(int, next(file).split(",")))
-#
-#    boards = []
-#    for row in file:
-#        row = row.strip()
-#        if row == "":
-#            board = []
-#            boards.append(board)
-#            continue
-#        board += map(int, row.split())
-#
-#    print(boards[0])
-
-
 def board_wins(a_board):
     for i in range(0, 5):
         if all(n < 0 for n in a_board[5 * i : 5 * i + 5]):
