@@ -53,6 +53,7 @@ def day5_2(inp):
             point_map[(x1, y1)] = point_map.get((x1, y1), 0) + 1
             x1 += x_inc
             y1 += y_inc
+        point_map[(x2, y2)] = point_map.get((x2, y2), 0) + 1
     ans = 0
     for point in point_map:
         intersections = point_map[point]
